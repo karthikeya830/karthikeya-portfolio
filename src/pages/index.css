@@ -1,0 +1,12 @@
+.bg {
+    
+    background-color: #483285;
+}
+
+.bggg {
+    background-image: url('../images/mainbggg.png');
+    background-size: 100% auto; /* Maintain full width while compressing height */
+    background-repeat: no-repeat;
+    background-position: -10%;
+    /* height: 100vh; Set the desired height for the container */
+}

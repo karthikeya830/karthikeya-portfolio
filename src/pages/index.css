@@ -1,12 +1,21 @@
 .bg {
-    
     background-color: #483285;
 }
 
 .bggg {
     background-image: url('../images/mainbggg.png');
-    background-size: 100% auto; /* Maintain full width while compressing height */
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: -10%;
-    /* height: 100vh; Set the desired height for the container */
 }
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

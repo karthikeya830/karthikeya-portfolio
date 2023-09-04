@@ -30,15 +30,18 @@ const Home = () => {
 
     return (
         <>
-            <section id="home" className=" text-white py-16 h-screen bggg">
-                <div className="container mx-auto text-center flex-col items-center mt-32  ">
-                    <h1 className="text-8xl font-sans">KARTHIKEYA</h1>
-                    <p className="mt-4 text-lg">
+            <section id="home" className="flex flex-col justify-around  text-white  h-screen bggg">
+                <div></div>
+                <div className="flex justify-around flex-col items-center  ">
+                    <h1 className="self-center md:text-4xl lg:text-8xl font-sans sm: text-3xl">KARTHIKEYA</h1>
+                    <br />
+                    <p className="w-2/3 sm: text-sm md:text-md lg:text-lg">
                         Crafting Immersive Web Experiences, Breathing Life into Games, Shaping 3D Environments, and Striving to Excel as a Software Developer. Welcome to My World of Creativity and Innovation.
                     </p>
 
-                    <button onClick={scrollToNextSection}>Down</button>
                 </div>
+                
+                <button className='' onClick={scrollToNextSection}>Down</button>
             </section>
         </>
     );

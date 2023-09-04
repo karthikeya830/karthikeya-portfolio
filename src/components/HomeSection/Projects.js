@@ -25,11 +25,11 @@ const Projects = () => {
     };
 
     return (
-        <section id="projects" className="py-16 bg-[#0f0f11] h-fit">
+        <section id="projects" className="py-16 flex justify-center bg-[#0f0f11] h-fit">
             <div className="text-white"></div>
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-semibold text-white">Projects</h2>
-                <div className="flex justify-center space-x-4 mt-8">
+                <div className="flex flex-wrap justify-center mt-8">
                     {Domains.map((item, index) => (
                         <button
                             key={index}
@@ -42,7 +42,7 @@ const Projects = () => {
                 </div>
                 <br />
                 <br />
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap justify-center">
                     {filteredProjects.map((project, index) => (
                         <ProjectCard key={index} data={project} />
                     ))}

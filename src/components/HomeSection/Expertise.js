@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../../pages/index.css';
-import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiReact, SiExpress, SiMysql, SiMongodb, SiUnrealengine, SiBlender, SiPython } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
+import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs,SiVisualstudiocode, SiReact, SiExpress, SiMysql, SiMongodb, SiUnrealengine, SiBlender, SiPython, SiDocker, SiGit } from 'react-icons/si';
+import { FaJava, FaGithub } from 'react-icons/fa';
+import { DiJenkins } from "react-icons/di";
 
 const skillIcons = {
   HTML: SiHtml5,
@@ -15,21 +16,30 @@ const skillIcons = {
   MongoDB: SiMongodb,
   Unreal: SiUnrealengine,
   Blender: SiBlender,
-  Python : SiPython
+  Python : SiPython,
+  Docker:SiDocker,
+  Jenkins:DiJenkins,
+  Git:SiGit,
+  Github:FaGithub,
+  VSCode:SiVisualstudiocode
 };
 
 const expertiseData = [
   {
-    category: 'Programming Languages',
+    category: 'Languages',
     skills: ['CSS', 'JavaScript', 'Java', 'C', 'Python'],
   },
   {
     category: 'Frameworks',
-    skills: ['React', 'Express', 'NodeJs'],
+    skills: ['React', 'Express', 'NodeJs', 'Docker'],
   },
   {
     category: 'Databases',
     skills: ['MySQL', 'MongoDB'],
+  },
+  {
+    category: 'Tools',
+    skills: ['Jenkins', 'Git', 'Github', 'VSCode'],
   },
   {
     category: '3D software',
@@ -50,11 +60,11 @@ const Expertise = () => {
       <div className="text-white"></div>
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-semibold text-white">Expertise</h2>
-        <div className="flex justify-center space-x-4 mt-8">
+        <div className="flex justify-center flex-wrap mt-8">
           {expertiseData.map((item, index) => (
             <button
               key={index}
-              className={`${item === selectedCategory ? 'text-white underline' : ' text-gray-600'} px-4 py-2 rounded-md`}
+              className={`${item === selectedCategory ? 'text-white' : ' text-gray-600'} px-4 py-2 rounded-md hover:text-xl `}
               onClick={() => changeCategory(item.category)}
             >
               {item.category}
@@ -68,8 +78,8 @@ const Expertise = () => {
             const Icon = skillIcons[skill] || FaJava;
             return (
               <div key={index} className="flex flex-col justify-center items-center h-1/3 w-1/4">
-                <h3 className="text-white text-5xl"><Icon /></h3>
-                <p className="mt-2 text-white">{skill}</p>
+                <h3 className="absolute text-white text-5xl hover:text-7xl"><Icon /></h3>
+                <p className="mt-20 text-white">{skill}</p>
               </div>
             );
           })}

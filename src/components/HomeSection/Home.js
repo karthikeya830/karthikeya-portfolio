@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+// import {useEffect} from 'react';
 import '../../pages/index.css'
 import {BsArrowDown} from 'react-icons/bs'
 const Home = () => {
@@ -27,12 +28,12 @@ const Home = () => {
             requestAnimationFrame(scrollStep);
         }
     };
-    useEffect(() => {
-        const animateTextElements = document.querySelectorAll('.animate-text');
-        animateTextElements.forEach((element, index) => {
-          element.style.animationDelay = `${index * 200}ms`;
-        });
-      }, []);
+    // useEffect(() => {
+    //     const animateTextElements = document.querySelectorAll('.animate-text');
+    //     animateTextElements.forEach((element, index) => {
+    //       element.style.animationDelay = `${index * 200}ms`;
+    //     });
+    //   }, []);
 
     return (
         <>
@@ -40,16 +41,16 @@ const Home = () => {
                 <div></div>
                 <div className="flex justify-around flex-col items-center">
                     <div class="text font-sans text-7xl md:text-5xl max-sm:text-3xl" >
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">k</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">a</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">r</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">t</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">h</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">i</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">k</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">e</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">y</span>
-                        <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">a</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">k</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">a</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">r</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">t</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">h</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">i</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">k</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">e</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">y</span>
+                        <span class="animatetext xl:p-4 md:p-2 max-sm:p-1">a</span>
                     </div>
                     <br />
                     <p className="w-2/3 sm: text-sm md:text-md lg:text-lg">

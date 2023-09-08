@@ -1,6 +1,7 @@
-:root {
-  --clr-neon: #ff5154;
-  --clr-bg: #0c0f0a;
+.projectbox {
+  color: #5ff0d0;
+  border: none;
+  border-radius: 10px;
 }
 
 .projectbox:hover {
@@ -8,11 +9,6 @@
   border: 1px solid #5ff0d0;
 }
 
-.projectbox {
-  color: #5ff0d0;
-  border: none;
-  border-radius: 10px;
-}
 
 /* heading name */
 
@@ -34,7 +30,7 @@
   }
 }
 
-.animate-text {
+.animatetext {
   text-transform: uppercase;
   animation: zoomup 3s linear infinite;
 }
@@ -42,17 +38,19 @@
 .text span {
   color: white;
 }
+
+
 /* down button */
 
 .downButton {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   font-size: 2rem;
-  color: var(--clr-neon);
+  color: #ff5154;
   cursor: pointer;
-  border: var(--clr-neon) 0.125em solid;
+  border: #ff5154 0.125em solid;
   padding: 0.5em 0.5em;
   border-radius: 100px 100px 100px 100px;
-  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  box-shadow: inset 0 0 0.5em 0 #ff5154, 0 0 0.5em 0 #ff5154;
 
   /* filter: drop-shadow(0rem 0rem 0.4rem #FF5154); */
 }
@@ -61,7 +59,7 @@
   pointer-events: none;
   content: "";
   position: absolute;
-  background: var(--clr-neon);
+  background: #ff5154;
   top: 120%;
   left: 0;
   width: 100%;
@@ -74,7 +72,7 @@
 
 .downButton:hover {
   filter: drop-shadow(0rem 0rem 4rem #f8181c);
-  /*   background: var(--clr-neon); */
+  /*   background: #ff5154; */
   /* color: var(--clr-bg); */
   /* border: #FF5154; */
 }
@@ -86,11 +84,11 @@
 .iconButton {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(242, 70, 70, 0.2));
   font-size: 3rem;
-  color: var(--clr-neon);
+  color: #ff5154;
   cursor: pointer;
   padding: 0.5em 0.5em;
   /* border-radius: 100px 100px 100px 100px; */
-  /* box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon); */
+  /* box-shadow: inset 0 0 0.5em 0 #ff5154, 0 0 0.5em 0 #ff5154; */
 
   /* filter: drop-shadow(0rem 0rem 0.4rem #FF5154); */
 }
@@ -99,7 +97,7 @@
   pointer-events: none;
   content: "";
   position: absolute;
-  background: var(--clr-neon);
+  background: #ff5154;
   top: 50%;
   left: 0;
   width: 100%;

@@ -9,13 +9,11 @@ const Projects = () => {
     const [filteredProjects, setFilteredProjects] = useState([]);
 
     useEffect(() => {
-        // Initialize the filteredProjects array with all projects when the component mounts.
         setFilteredProjects(projects);
     }, []);
 
     const changeCategory = (category) => {
         setSelectedCategory(category);
-        // Filter projects based on the selected category and update filteredProjects.
         if (category === 'All Projects') {
             setFilteredProjects(projects);
         } else {
@@ -42,7 +40,7 @@ const Projects = () => {
                 </div>
                 <br />
                 <br />
-                <div className="flex flex-wrap justify-center">
+                <div className="grid grid-cols-1 justify-items-center gap-y-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {filteredProjects.map((project, index) => (
                         <ProjectCard key={index} data={project} />
                     ))}

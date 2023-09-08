@@ -29,7 +29,7 @@ const Nav = () => {
                 </button>
             </div>
             {menuOpen && (
-                <div className="fixed left-2/4 top-10 h-fit w-fit bg-black bg-opacity-75 z-10 p-10 transition-opacity">
+                <div className="fixed left-2/4 top-10 h-fit w-fit bg-black bg-opacity-75 z-10 p-10 transition-opacity duration-500 ease-in-out">
                     <ul className="flex flex-col">
                         <li className="mb-4">
                             <button onClick={() => scrollToSection("home")}>Home</button>

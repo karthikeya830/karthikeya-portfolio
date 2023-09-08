@@ -1,21 +1,129 @@
-.bg {
-    background-color: #483285;
+:root {
+  --clr-neon: #ff5154;
+  --clr-bg: #0c0f0a;
 }
 
 .bggg {
-    background-image: url('../images/mainbggg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../images/mainbggg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+/* project card box */
+
+.projectbox:hover {
+  box-shadow: #5ff0d0 0px 0px 20px;
+  border: 1px solid #5ff0d0;
+}
+
+.projectbox {
+  color: #5ff0d0;
+  border: none;
+  border-radius: 10px;
+}
+
+/* heading name */
+
+@keyframes zoomup {
+  0%,
+  100% {
+    color: #00c2ba;
+    filter: blur(1px);
+    text-shadow: 0 0 10px #00c2ba, 0 0 20px #00c2ba, 0 0 30px #00c2ba,
+      0 0 40px #00c2ba, 0 0 60px #00c2ba, 0 0 80px #00c2ba, 0 0 100px #00c2ba,
+      0 0 120px #00c2ba;
   }
-  
+
+  5%,
+  95% {
+    filter: blur(0);
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+.animate-text {
+  @apply font-mono uppercase;
+  animation: zoomup 3s linear infinite;
+}
+
+.text span {
+  @apply text-white;
+}
+
+/* down button */
+
+.downButton {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  font-size: 2rem;
+  color: var(--clr-neon);
+  cursor: pointer;
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.5em 0.5em;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  /* filter: drop-shadow(0rem 0rem 0.4rem #FF5154); */
+}
+
+.downButton::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.downButton:hover,
+.neon-button:focus {
+  filter: drop-shadow(0rem 0rem 4rem #f8181c);
+  /*   background: var(--clr-neon); */
+  /* color: var(--clr-bg); */
+  /* border: #FF5154; */
+}
+
+.card {
+  box-shadow: 0 0 50px 15px #48abe0;
+}
+
+.iconButton {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(242, 70, 70, 0.2));
+  font-size: 3rem;
+  color: var(--clr-neon);
+  cursor: pointer;
+  padding: 0.5em 0.5em;
+  /* border-radius: 100px 100px 100px 100px; */
+  /* box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon); */
+
+  /* filter: drop-shadow(0rem 0rem 0.4rem #FF5154); */
+}
+
+.iconButton::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.15);
+  filter: blur(1em);
+  opacity: 0.2;
+}
+
+.iconButton:hover,
+.iconButton:focus {
+  filter: drop-shadow(0rem 0rem 0.4rem #f8181c);
+  /*   background: var(--clr-neon); */
+  /* color: var(--clr-bg); */
+  /* border: #FF5154; */
+}

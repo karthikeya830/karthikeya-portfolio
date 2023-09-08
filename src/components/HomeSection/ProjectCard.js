@@ -1,23 +1,26 @@
-import React from 'react';
-import '../../pages/index.css'
+import React, { useEffect, useState } from 'react';
+import '../../pages/index.css';
+import ProjectDetails from '../ProjectOverview';
+
 const ProjectCard = (props) => {
-  console.log(props.data);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const openDialog = () => setIsDialogOpen(true);
+  const closeDialog = () => setIsDialogOpen(false);
+
   return (
-    <div className='h-full w-full max-w-xs text-white m-2 rounded-lg  overflow- project-card transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-gray-100 border border-gray-300 p-4'>
-      <img
-        src="/static/nbg.jpg"
-        alt='t'
-        className='rounded-md transition-transform transform-gpu hover: '
-      />
-      <h2 className=" bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 w-full">
-        {props.data.title}
-      </h2>
-     </div>
-    // <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg shadow-lg hover:scale-110 transition-transform duration-300">
-    // <img src="/static/nbg.jpg" alt="Image" className="w-full h-auto" />
-    // <h2 className="text-center mt-2 text-white">Title Here</h2>
-  // </div>
-  
+    <div>
+      <div
+        className={` projectbox flex h-60 w-fit max-w-xs text-white rounded-lg overflow-hidden project-card transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-100 hover:border-4 border-blue-500 glowing-border`}
+        onClick={openDialog}
+      >
+        <img className='image transition-transform duration-1000 ease-in-out hover:scale-105 ' src= {props.data.imageUrl[0]} alt='tt' />
+        <h2 className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 w-full">
+          {props.data.title}
+        </h2>
+        
+      </div>
+    </div>
   );
 };
 

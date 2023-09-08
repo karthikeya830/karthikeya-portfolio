@@ -18,8 +18,6 @@ const MainContent = () => {
                 <div id="projects">
                     <Projects />
                 </div>
-                
-                
             </main>
 
         </>

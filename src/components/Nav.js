@@ -19,7 +19,7 @@ const Nav = () => {
 
     return (
         <nav className="flex justify-between p-5 items-center  text-white fixed top-0 left-0 right-0 z-5  bg-opacity-8">
-            <h1 className="text-2xl text-orange-200 cursor-pointer ">&lt;Karthikeya /&gt;</h1>
+            <h1 className="text-2xl text-white font-bold cursor-pointer ">&lt;Karthikeya /&gt;</h1>
 
             {/* Hamburger Icon */}
             <div className="md:hidden">
@@ -39,28 +39,31 @@ const Nav = () => {
                             <button onClick={() => scrollToSection("expertise")}>Expertise</button>
                         </li>
                         <li className="mb-4">
-                            <button onClick={() => scrollToSection("projects")}>Projects</button>
+                            <button onClick={() => scrollToSection("projects")}>Work</button>
                         </li>
-                        <li>
-                            <button onClick={() => scrollToSection("contact")}>Contact</button>
+                        <li className="mb-4">
+                            <button onClick={() => scrollToSection("contact")}>Connect</button>
                         </li>
                     </ul>
                 </div>
             )}
 
             {/* Mobile Menu */}
-            <ul className={`md:flex hidden }`}>
-                <li className="mr-4 mb-4 md:mb-0">
+            <ul className={`flex gap-10 justify-between md:flex hidden }`}>
+                <li className="mb-4 md:mb-0">
                     <button onClick={() => scrollToSection("home")}>Home</button>
                 </li>
-                <li className="mr-4 mb-4 md:mb-0">
+                <li className="mb-4 md:mb-0">
                     <button onClick={() => scrollToSection("expertise")}>Expertise</button>
                 </li>
-                <li className="mr-4 mb-4 md:mb-0">
-                    <button onClick={() => scrollToSection("projects")}>Projects</button>
+                <li className="mb-4 md:mb-0">
+                    <button onClick={() => scrollToSection("projects")}>Work</button>
                 </li>
-                <li>
-                    <button onClick={() => scrollToSection("contact")}>Contact</button>
+                <li className="mb-4 md:mb-0">
+                    <button onClick={() => scrollToSection("contact")}>Experience</button>
+                </li>
+                <li className="mb-4 md:mb-0">
+                    <button onClick={() => scrollToSection("contact")}>Connect</button>
                 </li>
             </ul>
 

@@ -25,7 +25,7 @@ const Projects = () => {
     return (
         <section id="projects" className="py-16 flex justify-center bg-[#0f0f11] h-fit">
             <div className="container mx-auto text-center text-white">
-                <h2 className="text-4xl font-semibold">Projects</h2>
+                <h2 className="text-4xl font-semibold">My Work</h2>
                 <div className="flex flex-wrap justify-center mt-8">
                     {Domains.map((item) => (
                         <button

@@ -87,10 +87,10 @@ const Expertise = () => {
         <br />
         <br />
         <br />
-        <div className='flex justify-around items-center gap-10' >
+        {/* <div className='flex justify-around items-center gap-10' >
           <h2 className='text-white text-3xl'>Check out my Resume</h2>
           <a href="https://drive.google.com/file/d/1MVYD6XsIX1DJB38G3YwxywLIXxlG6aYJ/view?usp=sharing" rel="noopener noreferrer" target='_blank' class="downButton text-sm">Here</a>
-        </div>
+        </div> */}
       </div>
 
     </section>

@@ -38,8 +38,6 @@ const Home = () => {
         <>
             <section id="home" className="flex flex-col justify-around  text-white  h-screen items-center bggg">
                 <div></div>
-
-
                 <div className="flex justify-around flex-col items-center">
                     <div class="text text-7xl md:text-5xl max-sm:text-3xl">
                         <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">k</span>
@@ -60,7 +58,7 @@ const Home = () => {
 
                 </div>
 
-                <button className='downButton' onClick={scrollToNextSection}><BsArrowDown /></button>
+                <button className='downButton' onClick={scrollToNextSection} aria-label="Scroll to the next section"><BsArrowDown /></button>
             </section>
         </>
     );

@@ -2,8 +2,8 @@ import React from 'react'
 import Home from './HomeSection/Home'
 import Expertise from './HomeSection/Expertise'
 import Projects from './HomeSection/Projects'
-import Experience from './HomeSection/Experience'
-import Footer from './Footer'
+// import Experience from './HomeSection/Experience'
+// import Footer from './Footer'
 
 const MainContent = () => {
     return (

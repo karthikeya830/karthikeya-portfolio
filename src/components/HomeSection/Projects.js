@@ -6,11 +6,7 @@ const Projects = () => {
     const Domains = ['All Projects', 'Websites', 'VFX', 'Games', 'ML'];
 
     const [selectedCategory, setSelectedCategory] = useState('All Projects');
-    const [filteredProjects, setFilteredProjects] = useState([]);
-
-    useEffect(() => {
-        setFilteredProjects(projects);
-    }, []);
+    const [filteredProjects, setFilteredProjects] = useState(projects);
 
     const changeCategory = (category) => {
         setSelectedCategory(category);
@@ -22,16 +18,19 @@ const Projects = () => {
         }
     };
 
+    useEffect(() => {
+        changeCategory('All Projects');
+    }, []);
+
     return (
         <section id="projects" className="py-16 flex justify-center bg-[#0f0f11] h-fit">
-            <div className="text-white"></div>
-            <div className="container mx-auto text-center">
-                <h2 className="text-4xl font-semibold text-white">Projects</h2>
+            <div className="container mx-auto text-center text-white">
+                <h2 className="text-4xl font-semibold">Projects</h2>
                 <div className="flex flex-wrap justify-center mt-8">
-                    {Domains.map((item, index) => (
+                    {Domains.map((item) => (
                         <button
-                            key={index}
-                            className={`${item === selectedCategory ? 'text-white underline' : ' text-gray-600'} px-4 py-2 rounded-md`}
+                            key={item}
+                            className={`${item === selectedCategory ? 'text-white underline' : 'text-gray-600'} px-4 py-2 rounded-md`}
                             onClick={() => changeCategory(item)}
                         >
                             {item}

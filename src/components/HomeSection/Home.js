@@ -8,7 +8,7 @@ const Home = () => {
 
         if (nextSection) {
             const targetOffset = nextSection.offsetTop;
-            const duration = 1000; // Adjust the duration as needed (in milliseconds)
+            const duration = 1000;
             const startTime = performance.now();
             const startOffset = window.pageYOffset;
 
@@ -36,10 +36,10 @@ const Home = () => {
 
     return (
         <>
-            <section id="home" className="flex flex-col justify-around  text-white  h-screen items-center bggg">
+            <section id="home" className="flex flex-col justify-around  text-white  h-screen items-center bg-[#0f0f11]">
                 <div></div>
                 <div className="flex justify-around flex-col items-center">
-                    <div class="text text-7xl md:text-5xl max-sm:text-3xl">
+                    <div class="text font-sans text-7xl md:text-5xl max-sm:text-3xl" >
                         <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">k</span>
                         <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">a</span>
                         <span class="animate-text xl:p-4 md:p-2 max-sm:p-1">r</span>

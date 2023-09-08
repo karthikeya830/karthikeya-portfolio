@@ -3,14 +3,6 @@
   --clr-bg: #0c0f0a;
 }
 
-.bggg {
-  background-image: url("../images/mainbggg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* project card box */
-
 .projectbox:hover {
   box-shadow: #5ff0d0 0px 0px 20px;
   border: 1px solid #5ff0d0;
@@ -43,14 +35,13 @@
 }
 
 .animate-text {
-  @apply font-mono uppercase;
+  text-transform: uppercase;
   animation: zoomup 3s linear infinite;
 }
 
 .text span {
-  @apply text-white;
+  color: white;
 }
-
 /* down button */
 
 .downButton {
@@ -81,8 +72,7 @@
   opacity: 0.7;
 }
 
-.downButton:hover,
-.neon-button:focus {
+.downButton:hover {
   filter: drop-shadow(0rem 0rem 4rem #f8181c);
   /*   background: var(--clr-neon); */
   /* color: var(--clr-bg); */
@@ -120,10 +110,6 @@
   opacity: 0.2;
 }
 
-.iconButton:hover,
-.iconButton:focus {
+.iconButton:hover {
   filter: drop-shadow(0rem 0rem 0.4rem #f8181c);
-  /*   background: var(--clr-neon); */
-  /* color: var(--clr-bg); */
-  /* border: #FF5154; */
 }

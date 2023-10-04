@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../pages/index.css';
-import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiVisualstudiocode, SiReact, SiExpress, SiMysql, SiMongodb, SiUnrealengine, SiBlender, SiPython, SiDocker, SiGit } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiVisualstudiocode, SiReact, SiExpress, SiMysql, SiMongodb, SiUnrealengine, SiBlender, SiPython, SiDocker, SiGit, SiTensorflow } from 'react-icons/si';
 import { FaJava, FaGithub } from 'react-icons/fa';
 import { DiJenkins } from "react-icons/di";
 
@@ -21,7 +21,8 @@ const skillIcons = {
   Jenkins: DiJenkins,
   Git: SiGit,
   Github: FaGithub,
-  VSCode: SiVisualstudiocode
+  VSCode: SiVisualstudiocode,
+  TensorFlow:SiTensorflow
 };
 
 const expertiseData = [
@@ -31,7 +32,7 @@ const expertiseData = [
   },
   {
     category: 'Frameworks',
-    skills: ['React', 'Express', 'NodeJs', 'Docker'],
+    skills: ['React', 'Express', 'NodeJs', 'Docker', 'TensorFlow'],
   },
   {
     category: 'Databases',

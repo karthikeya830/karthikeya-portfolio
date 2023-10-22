@@ -37,7 +37,7 @@ const Home = () => {
     }, []);
 
     return (
-        <section id="home" className="flex flex-col justify-around text-white min-h-screen items-center bg-[#0f0f11]">
+        <section id="home" className="flex flex-col justify-around text-white min-h-screen items-center">
             <div></div>
             <div className="flex justify-around flex-col text-center md:text-left">
                 <div className="text font-bold text-4xl md:text-5xl max-sm:text-3xl">
@@ -58,7 +58,7 @@ const Home = () => {
                         Hello everyone! I'm currently in my final year of engineering, where I've had the opportunity to explore and refine my skills in various domains. My interests span across the exciting realms of web development, game design, machine learning, and the captivating world of VFX videos. Join me as I showcase my projects and share my passion for crafting digital experiences that push boundaries and make a difference.
                     </p>
                     <br />
-                    <a href="https://drive.google.com/file/d/1MVYD6XsIX1DJB38G3YwxywLIXxlG6aYJ/view?usp=sharing" rel="noopener noreferrer" target='_blank' className="resumeButton text-sm self-center md:self-start font-bold text-white">Resume</a>
+                    <a href="https://drive.google.com/file/d/123tSc1k4gnbakn11D8_sx8O7J68lUv2J/view?usp=share_link" rel="noopener noreferrer" target='_blank' className="resumeButton text-sm self-center md:self-start font-bold text-white">Resume</a>
                 </div>
             </div>
             <button className='downButton' onClick={scrollToNextSection} aria-label="Scroll to the next section"><BsArrowDown /></button>

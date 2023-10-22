@@ -1,12 +1,20 @@
 import * as React from "react"
 import Layout from "../components/Layout"
+import ProjectOverview from "../components/ProjectOverview"
 import '../styles/tailwind.css';
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 const IndexPage = () => {
   return (
-    <div className="index">
-        <Layout />
-    </div>
+    <BrowserRouter>
+      <div className="index">
+      <Routes >
+        <Route path="/" element={<Layout/>} />
+        <Route path="/:id" element={<ProjectOverview /> } />
+      </Routes>
+        {/* <Layout /> */}
+      </div>
+    </BrowserRouter>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import projects from '../../Data/Projects';
 import ProjectCard from './ProjectCard';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const Domains = ['All Projects', 'Websites', 'VFX', 'Games', 'ML'];
@@ -41,7 +42,7 @@ const Projects = () => {
                 <br />
                 <div className="grid grid-cols-1 justify-items-center gap-y-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {filteredProjects.map((project, index) => (
-                        <ProjectCard key={index} data={project} />
+                        <Link to={`/${project.id}`} ><ProjectCard key={index} data={project} /></Link>
                     ))}
                 </div>
             </div>

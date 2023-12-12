@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import projects from '../../Data/Projects';
 import ProjectCard from './ProjectCard';
-import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const Domains = ['All Projects', 'Websites', 'VFX', 'Games', 'ML'];

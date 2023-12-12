@@ -2,18 +2,19 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import ProjectOverview from "../components/ProjectOverview"
 import '../styles/tailwind.css';
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 const IndexPage = () => {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <div className="index">
-      <Routes >
-        <Route path="/" element={<Layout/>} />
-        <Route path="/:id" element={<ProjectOverview /> } />
-      </Routes>
+        <Layout />
+      {/* <Routes > */}
+        {/* <Route path="/" element={<Layout/>} /> */}
+        {/* <Route path="/:id" element={<ProjectOverview /> } /> */}
+      {/* </Routes> */}
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   )
 }
 

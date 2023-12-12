@@ -42,7 +42,8 @@ const Projects = () => {
                 <br />
                 <div className="grid grid-cols-1 justify-items-center gap-y-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {filteredProjects.map((project, index) => (
-                        <Link to={`/${project.id}`} ><ProjectCard key={index} data={project} /></Link>
+                        // <Link to={`/${project.id}`} ><ProjectCard key={index} data={project} /></Link>
+                        <ProjectCard key={index} data={project} />
                     ))}
                 </div>
             </div>

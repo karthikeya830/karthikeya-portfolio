@@ -12,7 +12,6 @@ const IndexPage = () => {
         <Route path="/" element={<Layout/>} />
         <Route path="/:id" element={<ProjectOverview /> } />
       </Routes>
-        {/* <Layout /> */}
       </div>
     </BrowserRouter>
   )
@@ -20,4 +19,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Karthikeya</title>
+export const Head = () => <title>Karthikeya Portfolio</title>
